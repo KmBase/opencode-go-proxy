@@ -97,7 +97,7 @@ curl -X POST https://your-worker.workers.dev/v1/chat/completions \
 | `GET /health` | 健康检查 |
 | `OPTIONS *` | CORS 预检请求 |
 | `/v1/*` | 代理到 `https://opencode.ai/zen/go/v1/*` |
-| `/compat/v1/*` | 同上，兼容路径 |
+| `/compat/*` | 同上，兼容路径（Cloudflare 自动路由） |
 
 ## 环境变量
 
