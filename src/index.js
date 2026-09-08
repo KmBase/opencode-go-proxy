@@ -38,6 +38,7 @@ export default {
     upstreamHeaders.set("Content-Type", request.headers.get("Content-Type") || "application/json");
     upstreamHeaders.set("Authorization", "Bearer " + apiKey);
     upstreamHeaders.set("Accept", request.headers.get("Accept") || "application/json");
+    upstreamHeaders.set("User-Agent", "opencode-proxy/1.0");
 
     const session = request.headers.get("x-opencode-session") || generateSessionId();
     upstreamHeaders.set("x-opencode-session", session);
