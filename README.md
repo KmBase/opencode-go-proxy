@@ -26,7 +26,7 @@ OpenCode API 要求每个请求携带 `x-opencode-session` 头来维持会话状
 - **自定义 User-Agent** — 设置为 `opencode-proxy/1.0`，满足上游 API 的身份识别要求
 - **CORS 跨域支持** — `Access-Control-Allow-Origin: *`
 - **路径透明代理** — `/v1/*` → `https://opencode.ai/zen/go/v1/*`
-- **兼容路径** — `/compat/v1/*` 同样映射到上游 API
+- **兼容路径** — `/compat/*` 同样映射到上游 API（Cloudflare 自动路由）
 - **健康检查** — `GET /` 或 `GET /health`
 
 ## 快速开始
