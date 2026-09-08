@@ -1,0 +1,6 @@
+name = "opencode-proxy"
+main = "src/index.js"
+compatibility_date = "2024-12-01"
+
+# Set OPENCODE_API_KEY as a Cloudflare Secret:
+#   npx wrangler secret put OPENCODE_API_KEY
